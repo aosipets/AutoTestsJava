@@ -28,13 +28,11 @@
             <artifactId>java-client</artifactId>
             <version>6.1.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<!--        <dependency>-->
-<!--            <groupId>org.seleniumhq.selenium</groupId>-->
-<!--            <artifactId>selenium-java</artifactId>-->
-<!--            <version>3.14.0</version>-->
-<!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
+        <dependency>
+            <groupId>com.jayway.maven.plugins.android.generation1.plugins</groupId>
+            <artifactId>maven-aapt-plugin</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <dependency>
             <groupId>javax.websocket</groupId>
             <artifactId>javax.websocket-api</artifactId>
