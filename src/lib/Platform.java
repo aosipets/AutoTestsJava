@@ -53,8 +53,8 @@ public class Platform {
         capabilities.setCapability("deviceName","AndroidTestDevice");
         capabilities.setCapability("platformVersion","6.0");
         capabilities.setCapability("automationName","Appium");
-        capabilities.setCapability("appPackage",".main.MainActivityg.wikipedia");
-        capabilities.setCapability("appActivity","");
+        capabilities.setCapability("appPackage","org.wikipedia");
+        capabilities.setCapability("appActivity",".main.MainActivity");
         capabilities.setCapability("app","/Users/alexanderosipets/Documents/AutoTests/apks/org.wikipedia.apk");
         capabilities.setCapability("automationName", "UiAutomator2");
         return capabilities;

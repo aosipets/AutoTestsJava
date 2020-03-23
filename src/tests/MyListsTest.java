@@ -29,7 +29,6 @@ public class MyListsTest extends CoreTestCase
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
         final String article_title = ArticlePageObject.getArticleTitle();
-        System.out.println(article_title);
 
         if (Platform.getInstance().isAndroid()){
             ArticlePageObject.addArticleToMyList(name_of_folder);
@@ -39,7 +38,10 @@ public class MyListsTest extends CoreTestCase
         MyListsPageObject MyListPageObject = MyListsPageObjectFactory.get(driver);
         ArticlePageObject.closeArticle();
 
+        if (Platform.getInstance().isIos())
+        {
         SearchPageObject.clickCancelSearch();
+        }
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
@@ -53,6 +55,7 @@ public class MyListsTest extends CoreTestCase
             MyListPageObject.openFolderByName(name_of_folder);
         }
         MyListPageObject.swipeByArticleToDelete(article_title);
+
 
 
     }
